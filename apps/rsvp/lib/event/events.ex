@@ -1,4 +1,4 @@
-defmodule Rsvp.Event do
+defmodule Rsvp.Events do
   use Ecto.Schema
 
   schema "events" do
@@ -6,6 +6,6 @@ defmodule Rsvp.Event do
     field :location, :string
     field :date, Ecto.DateTime
 
-    timestamps
+    timestamps()
   end
 end
