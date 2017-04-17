@@ -14,7 +14,8 @@
   <body>
     <div class="container">
       <header class="header">
-        <span class="logo"></span>
+        <h1 class="text-center">RSVP</h1>
+        <h4 class="text-center">Your online directory of events.</h1>
       </header>
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>

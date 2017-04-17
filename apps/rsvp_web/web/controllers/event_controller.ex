@@ -6,4 +6,9 @@ defmodule RsvpWeb.EventController do
     |> IO.inspect()
     render conn, "show.html", event: event
   end
+
+  def index(conn, _params) do
+    events = Rsvp.EventQueries.get_all
+    render conn, "index.html", events: events
+  end
 end
