@@ -17,7 +17,7 @@ defmodule RsvpWeb.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {RsvpWeb, []},
-     applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext, :rsvp]]
+     applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext, :phoenix_ecto, :rsvp]]
   end
 
   # Specifies which paths to compile per environment.
@@ -35,6 +35,7 @@ defmodule RsvpWeb.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
+      {:phoenix_ecto, "~> 3.0"},
       {:rsvp, in_umbrella: true}
    ]
   end
